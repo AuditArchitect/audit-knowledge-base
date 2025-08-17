@@ -1,0 +1,73 @@
+site_name: LR Audit Knowledge Base
+
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+  palette:
+    - scheme: default
+      primary: "blue"
+      accent: "indigo"
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - content.code.annotate
+    - content.action.edit
+
+nav:
+  - Home: index.md
+  - ISO Programs:
+      - ISO 9001:
+          - Overview: programs/iso9001/overview.md
+          - Procedures: programs/iso9001/procedures/index.md
+          - Records: programs/iso9001/records/index.md
+      - ISO 14001:
+          - Overview: programs/iso14001/overview.md
+          - Procedures: programs/iso14001/procedures/index.md
+  - Social Responsibility:
+      - WRAP: programs/social/wrap/overview.md
+      - SMETA: programs/social/smeta/overview.md
+      - SLCP: programs/social/slcp/overview.md
+  - Security & Sustainability:
+      - C-TPAT: programs/security/ctpat/overview.md
+      - Higg FEM: programs/sustainability/higg/overview.md
+      - RBA: programs/sustainability/rba/overview.md
+  - Contributor Guide:
+      - Onboarding: contributors/onboarding.md
+      - Folder Tree Design: contributors/folder-tree.md
+      - PowerShell Automation: contributors/powershell.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search
+  - tags
+  - macros
+
+extra_css:
+  - assets/styles/custom.css
+extra_javascript:
+  - assets/scripts/custom.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourprofile
+
+
